@@ -27,8 +27,7 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-${{ env.cache-name }}-5039bde1f7173e1e50147750a44653f6f50375a80e4460a2d4384e4915b781a7
- # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
+          key: ${{ runner.os }}-${{ env.cache-name }}-5039bde1f7173e1e50147750a44653f6f50375a80e4460a2d4384e4915b781a7# 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
           npm install
