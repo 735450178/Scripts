@@ -35,6 +35,8 @@ jobs:
         run: |
           node conghua.js
         env:
+          CH_SHARE: ${{ secrets.CH_SHARE }}
+          CH_VIDEO: ${{ secrets.CH_VIDEO }}
           CH_TASKCENTER: ${{ secrets.CH_TASKCENTER }}
           CH_SHAREREWARD: ${{ secrets.CH_SHAREREWARD }}
           CH_TIMERED: ${{ secrets.CH_TIMERED }}
